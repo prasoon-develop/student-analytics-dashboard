@@ -1,0 +1,7 @@
+[
+  {"id": 1, "name": "Divya", "math": 85, "science": 92, "english": 78, "hindi": 88},
+  {"id": 2, "name": "Diksha", "math": 78, "science": 85, "english": 90, "hindi": 82},
+  {"id": 3, "name": "Bhoomi", "math": 92, "science": 88, "english": 85, "hindi": 95},
+  {"id": 4, "name": "Prasoon", "math": 88, "science": 79, "english": 92, "hindi": 80},
+  {"id": 5, "name": "Pranshu", "math": 75, "science": 82, "english": 70, "hindi": 85}
+]

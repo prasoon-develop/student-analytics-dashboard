@@ -1,0 +1,192 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+min-height:100vh;
+color:#111827;
+padding:30px;
+}
+
+.container{
+max-width:1400px;
+margin:auto;
+}
+
+.hero{
+text-align:center;
+margin-bottom:35px;
+color:white;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.timeline{
+color:#cbd5e1;
+margin-bottom:8px;
+font-weight:600;
+}
+
+.subtitle{
+color:#e2e8f0;
+font-size:1rem;
+}
+
+.controls{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-bottom:30px;
+}
+
+.controls input,
+.controls select{
+padding:14px;
+min-width:250px;
+border:none;
+border-radius:12px;
+outline:none;
+font-size:15px;
+background:white;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+#statsContainer{
+margin-bottom:30px;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:rgba(255,255,255,0.95);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter:blur(10px);
+border-radius:18px;
+padding:25px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card h2{
+color:#2563eb;
+margin-bottom:8px;
+font-size:2rem;
+}
+
+.card p{
+color:#64748b;
+font-weight:600;
+}
+
+.chart-card{
+background:white;
+border-radius:20px;
+padding:25px;
+margin-bottom:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.chart-card h2{
+margin-bottom:20px;
+color:#1e293b;
+}
+
+#rankingContainer{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+margin-bottom:30px;
+}
+
+#rankingContainer h2{
+margin-bottom:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background:#2563eb;
+color:white;
+padding:15px;
+}
+
+td{
+padding:14px;
+text-align:center;
+border-bottom:1px solid #e5e7eb;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+}
+
+.risk-alert{
+background:#fee2e2;
+color:#991b1b;
+padding:20px;
+border-radius:18px;
+text-align:center;
+font-weight:600;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.top-card h2{
+color:#16a34a;
+}
+
+.low-card h2{
+color:#dc2626;
+}
+
+.pass-card h2{
+color:#f59e0b;
+}
+
+canvas{
+max-height:450px;
+}
+
+@media(max-width:768px){
+    body{
+        padding:15px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .controls{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .controls input,
+    .controls select{
+        width:100%;
+    }
+
+    table{
+        font-size:13px;
+    }
+}
